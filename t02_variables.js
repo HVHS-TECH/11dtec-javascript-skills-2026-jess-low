@@ -7,9 +7,11 @@ console.log("HELLO!");
 
 // This is a single line comment
 
-var aName;
-var age;
-var money;
-aName = 0;
-age = 0;
-money = 0;
+let aName = 0;
+let age = 0;
+let money = 0;
+console.log("Your name is " + aName);
+console.log("You are " + age + " years old.");
+console.log("You have $" + aName + " worth of pocket money.");
+
+
