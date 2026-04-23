@@ -7,4 +7,9 @@ console.log("HELLO!");
 
 // This is a single line comment
 
-var 
+var aName;
+var age;
+var money;
+aName = 0;
+age = 0;
+money = 0;
