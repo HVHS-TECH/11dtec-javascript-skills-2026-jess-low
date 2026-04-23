@@ -2,6 +2,8 @@
 Intro:
 ****************************/
 
+console.log("Running t01_introduction.js");
+
 // This code defines the variables and their properties
 
 let aName = "Bob";

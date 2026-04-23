@@ -1,4 +1,5 @@
-// Set up the size of the page
+console.log("Running t01_introduction.js");// Set up the size of the page
+
 var length = 8;
 var width = 10;
 

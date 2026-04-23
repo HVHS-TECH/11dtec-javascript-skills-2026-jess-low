@@ -2,6 +2,8 @@
 Intro:
 ****************************/
 
+console.log("Running t01_introduction.js");
+
 // transfer from JS to HTML
 const OUTPUT = document.getElementById("JavaScriptOutput");
 OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
