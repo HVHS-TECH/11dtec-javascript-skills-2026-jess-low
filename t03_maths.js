@@ -4,10 +4,10 @@ Intro:
 
 // This code defines the variables and their properties
 
-let aName = 0;
-let year = 0;
-let age = 0;
-let birth = 0;
+let aName = rob;
+let year = 2026;
+let age = 15;
+let birth = year - age;
 let money = 0;
 
 // This code adds a message to console log
