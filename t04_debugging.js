@@ -1,14 +1,15 @@
+//define variables
 
 var length = 8;
-var width = 10
-
-console.log("Task 4 - Debugging")
+var width = 10;
 
 // calculate the area
-var area = length + width;
+var area = length * width;
 
 // calculate the perimeter
-var perimeter = 2  length + 2 * width; 
+var perimeter = (2 * length) + (2 * width);
+
+console.log("Task 4 - Debugging")
 
 // Set up the size of the page.
 
