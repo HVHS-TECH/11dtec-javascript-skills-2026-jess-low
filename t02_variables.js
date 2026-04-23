@@ -4,8 +4,8 @@ Intro:
 
 // This code defines the variables and their properties
 
-let aName = bob;
-let year = 0;
+let aName = "bob";
+let year = 2026;
 let age = 0;
 let money = 0;
 
