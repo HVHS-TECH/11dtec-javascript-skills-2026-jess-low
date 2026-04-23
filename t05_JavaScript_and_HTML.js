@@ -2,6 +2,10 @@
 Intro:
 ****************************/
 
+// transfer from JS to HTML
+const OUTPUT = document.getElementById("JavaScriptOutput");
+OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
+
 // This code defines the variables and their properties
 
 let aName = "Bob";
