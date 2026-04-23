@@ -8,10 +8,11 @@ console.log("HELLO!");
 // This is a single line comment
 
 let aName = 0;
+let year = 0;
 let age = 0;
 let money = 0;
-console.log("Your name is " + aName);
-console.log("You are " + age + " years old.");
+console.log("Hi " + aName);
+console.log("As of " + year + ", you are " + age + " years old.");
 console.log("You have $" + aName + " worth of pocket money.");
 
 

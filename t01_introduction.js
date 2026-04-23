@@ -1,6 +1,5 @@
 /****************************
-This is a block comment.
-Put your header comment here!
+Intro:
 ****************************/
 console.log("Running t01_introduction.js");
 console.log("HELLO!");
