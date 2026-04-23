@@ -13,4 +13,4 @@ let money = 0;
 
 console.log("Hi " + aName);
 console.log("As of " + year + ", you are " + age + " years old.");
-console.log("You have $" + aName + " worth of pocket money.");
+console.log("You have " + money + " dollars.");
