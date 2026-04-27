@@ -12,8 +12,7 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 function welcome(){
     OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
 }
+function start(){
+    welcome()
+}
 
-// This code adds a message to console log
-
-welcome()
-welcome()

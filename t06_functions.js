@@ -13,7 +13,7 @@ function welcome(){
     OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
 }
 
-// This code adds a message to console log
+// This code adds a message to page
 
 welcome()
 welcome()
