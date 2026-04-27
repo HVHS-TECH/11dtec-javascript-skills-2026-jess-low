@@ -2,7 +2,7 @@
 Intro:
 ****************************/
 
-console.log("Running t01_introduction.js");
+console.log("Running t05_JS_and_HTML.js");
 
 // transfer from JS to HTML
 const OUTPUT = document.getElementById("JavaScriptOutput");

@@ -2,7 +2,7 @@
 Intro:
 ****************************/
 
-console.log("Running t01_introduction.js");
+console.log("Running t02_variables.js");
 
 // This code defines the variables and their properties
 
