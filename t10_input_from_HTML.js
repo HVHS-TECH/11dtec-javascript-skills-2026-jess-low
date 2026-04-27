@@ -1,1 +1,18 @@
-/* Paste your code from the last task */
+/****************************
+Intro:
+****************************/
+
+console.log("Running t10_input_from_HTML.js");
+
+// transfer from JS to HTML
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
+
+//Functions
+function welcome(){
+    OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
+}
+function start(){
+    welcome()
+}
+
