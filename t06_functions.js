@@ -17,12 +17,19 @@ let birth = year - age;
 let newAge = age + 10;
 let money = 10;
 
+//Functions
+function welcome(){
+    OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
+}
+
 // This code adds a message to console log
 
+welcome()
 OUTPUT.innerHTML += "<h3>Hi " + aName + ".</h3>";
 OUTPUT.innerHTML += "<h4>As of " + year + ", you are " + age + " years old.</h4>";
 OUTPUT.innerHTML += "<p>You were born in " + birth + ".</p>";
 OUTPUT.innerHTML += "<p>In ten years you will be " + newAge + " years old.</p>";
 OUTPUT.innerHTML += "<p>You have " + money + " dollars.</p>";
+welcome()
 OUTPUT.innerHTML += "<p>You spend half of your money, now you have $" + (money = money / 2) + ".</p>";
 OUTPUT.innerHTML += "<p>Then you get $3, now you have $" + (money + 3) + ".</p>";
