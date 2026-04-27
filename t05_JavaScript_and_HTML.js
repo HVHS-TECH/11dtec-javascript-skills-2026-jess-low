@@ -19,10 +19,10 @@ let money = 10;
 
 // This code adds a message to console log
 
-OUTPUT.innerHTML += "<h3>Hi " + aName "</h3>";
-OUTPUT.innerHTML += ("As of " + year + ", you are " + age + " years old.");
-OUTPUT.innerHTML += ("You were born in " + birth);
-OUTPUT.innerHTML += ("In ten years you will be " + newAge + " years old.");
-OUTPUT.innerHTML += ("You have " + money + " dollars.");
-OUTPUT.innerHTML += ("You spend half of your money, now you have $" + (money = money / 2));
-OUTPUT.innerHTML += ("Then you get $3, now you have $" + (money + 3));
+OUTPUT.innerHTML += "<h3>Hi " + aName + ".</h3>";
+OUTPUT.innerHTML += "<h4>As of " + year + ", you are " + age + " years old.</h4>";
+OUTPUT.innerHTML += "<p>You were born in " + birth + ".</p>";
+OUTPUT.innerHTML += "<p>In ten years you will be " + newAge + " years old.</p>";
+OUTPUT.innerHTML += "<p>You have " + money + " dollars.</p>";
+OUTPUT.innerHTML += "<p>You spend half of your money, now you have $" + (money = money / 2) + ".</p>";
+OUTPUT.innerHTML += "<p>Then you get $3, now you have $" + (money + 3) + ".</p>";
