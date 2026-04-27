@@ -22,9 +22,10 @@
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br></p>
 
   <button onclick="start()">Start</button><br>
-  <form>
-    <input type="text">
-    <input type="submit">
+
+  <form onsubmit="return false;">
+    <input type="text" id="nameField">
+    <input type="submit" onClick=getFormInput()>
   </form>
 
   <div id="spaceForJavaScriptOutput">

@@ -12,7 +12,11 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 function welcome(){
     OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
 }
+function getFormInput(){
+  
+  }
 function start(){
+    form()
     welcome()
 }
 
