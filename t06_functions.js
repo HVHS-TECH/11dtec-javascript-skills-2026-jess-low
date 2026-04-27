@@ -5,7 +5,7 @@ Intro:
 console.log("Running t06_functions.js");
 
 // transfer from JS to HTML
-const OUTPUT = document.getElementById("JavaScriptOutput");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 // This code defines the variables and their properties
