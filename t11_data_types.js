@@ -18,7 +18,7 @@ function getUserName(){
 function getUserAge(){
     const AGE_FIELD = document.getElementById("ageField");
     let userAge = Number(AGE_FIELD.value);
-    OUTPUT.innerHTML += "<p>Your age is " + userAge + ".</p>"
+    OUTPUT.innerHTML += "<p>You are " + userAge + " years old.</p>"
   }
   function getUserMoney(){
     const MONEY_FIELD = document.getElementById("moneyField");
