@@ -1,5 +1,5 @@
 /****************************
-Intro:
+Intro:/
 ****************************/
 
 console.log("Running t12_conditionals.js");
