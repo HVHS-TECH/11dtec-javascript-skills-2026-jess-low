@@ -10,13 +10,24 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 
 //Functions
-
-function getFormInput(){
+function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>"
   }
+function getUserAge(){
+    const AGE_FIELD = document.getElementById("ageField");
+    let userAge = Number(AGE_FIELD.value);
+    OUTPUT.innerHTML += "<p>Your age is " + userAge + ".</p>"
+  }
+  function getUserMoney(){
+    const MONEY_FIELD = document.getElementById("moneyField");
+    let userMoney = Number(MONEY_FIELD.value);
+    OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>"
+  }
 function start(){
-    getFormInput()
+    getUserName();
+    getUserAge();
+    getUserMoney();
 }
 
