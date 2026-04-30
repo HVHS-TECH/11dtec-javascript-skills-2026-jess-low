@@ -2,7 +2,7 @@
 Intro:
 ****************************/
 
-console.log("Running t11_data_types.js");
+console.log("Running t12_conditionals.js");
 
 // transfer from JS to HTML
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
