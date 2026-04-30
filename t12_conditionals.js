@@ -31,3 +31,9 @@ function start(){
     getUserMoney();
 }
 
+if (userMoney >= 4){
+    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>"
+} else {
+    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>"
+}
+
