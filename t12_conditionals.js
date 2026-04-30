@@ -13,27 +13,29 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
     let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>"
+    OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>";
   }
 function getUserAge(){
     const AGE_FIELD = document.getElementById("ageField");
     let userAge = Number(AGE_FIELD.value);
-    OUTPUT.innerHTML += "<p>You are " + userAge + " years old.</p>"
+    OUTPUT.innerHTML += "<p>You are " + userAge + " years old.</p>";
   }
   function getUserMoney(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
-    OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>"
+    OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
   }
+
+if (userMoney >= 4){
+    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
+} else {
+    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
+}
+
 function start(){
     getUserName();
     getUserAge();
     getUserMoney();
-}
 
-if (userMoney >= 4){
-    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>"
-} else {
-    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>"
 }
 
