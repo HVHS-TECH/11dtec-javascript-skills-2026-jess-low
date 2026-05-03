@@ -30,14 +30,17 @@ function getUserAge(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
+  }
+  function afford(){
 if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
 } else {
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
   }
-function calculateChange(_money, _price){
-    
+
+function calculateChange(_money, _name, _change){
+    OUTPUT.innerHTML += "<p> You have $" + _money + "If you buy a " + _name + ", you will get $" + _change + " change.</p>"
 }
     
 
@@ -53,6 +56,7 @@ function start(){
     getUserName();
     getUserAge();
     getUserMoney();
-    calculateChange();
+    calculateChange(userMoney, "Chocolate bar", userMoney - 4);
+    calculateChange(userMoney, "pack of Chips", userMoney - 4);
+    calculateChange(userMoney, "Drink", userMoney - 4);
 }
-
