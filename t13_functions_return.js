@@ -57,7 +57,7 @@ function start(){
     getUserName();
     getUserAge();
     getUserMoney();
-    calculateChange(getUserMoney, "Chocolate bar", userMoney - 4);
-    calculateChange(userMoney, "pack of Chips", userMoney - 4);
-    calculateChange(userMoney, "Drink", userMoney - 4);
+    calculateChange(getUserMoney, "Chocolate bar", getUserMoney - 4);
+    calculateChange(getUserMoney, "pack of Chips", getUserMoney - 4);
+    calculateChange(getUserMoney, "Drink", getUserMoney - 4);
 }
