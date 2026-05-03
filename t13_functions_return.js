@@ -41,10 +41,11 @@ if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
   }
-function calculateChange(_name, _change){
+function calculateChange(_name, _change, _cost, _more){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
-    OUTPUT.innerHTML += "<p> You have $" + userMoney + ". If you buy a " + _name + ", you will get $" + _change + " change.</p>"
+    let _more = 
+    OUTPUT.innerHTML += "<p> You have $" + userMoney + ". If you buy a " + _name + ", you will get $" + (_change - _cost) + " change.</p>"
 }
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
@@ -63,7 +64,7 @@ function start(){
     getUserAge();
     getUserMoney();
     afford();
-    calculateChange("Chocolate bar", userMoney - 4);
-    calculateChange("pack of Chips", work - 4);
+    calculateChange("Chocolate bar", userMoney, 4);
+    calculateChange("pack of Chips", work, 4);
     calculateChange("Drink", userMoney - 4);
 }
