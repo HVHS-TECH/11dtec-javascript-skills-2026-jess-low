@@ -39,10 +39,10 @@ if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
   }
-
 function calculateChange(_money, _name, _change){
     OUTPUT.innerHTML += "<p> You have $" + _money + ". If you buy a " + _name + ", you will get $" + _change + " change.</p>"
 }
+const work = getUserMoney();
     
 
 // This code adds a message to the page
@@ -57,7 +57,7 @@ function start(){
     getUserName();
     getUserAge();
     getUserMoney();
-    calculateChange(getUserMoney, "Chocolate bar", getUserMoney - 4);
-    calculateChange(getUserMoney, "pack of Chips", getUserMoney - 4);
+    calculateChange(work, "Chocolate bar", work - 4);
+    calculateChange(work, "pack of Chips", work - 4);
     calculateChange(getUserMoney, "Drink", getUserMoney - 4);
 }
