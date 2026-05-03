@@ -40,7 +40,7 @@ if (userMoney >= 4){
   }
 
 function calculateChange(_money, _name, _change){
-    OUTPUT.innerHTML += "<p> You have $" + _money + "If you buy a " + _name + ", you will get $" + _change + " change.</p>"
+    OUTPUT.innerHTML += "<p> You have $" + _money + ". If you buy a " + _name + ", you will get $" + _change + " change.</p>"
 }
     
 
