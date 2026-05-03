@@ -38,10 +38,18 @@ if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
 
+
+// This code adds a message to the page
+
+
+
 function start(){
     getUserName();
     getUserAge();
     getUserMoney();
-
+  welcome();
+  displayProduct("Chocolate bar", 4);
+  displayProduct("Chips", 3);
+  displayProduct("Drink", "2.50");
 }
 
