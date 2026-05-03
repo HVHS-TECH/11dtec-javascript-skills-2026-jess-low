@@ -36,7 +36,10 @@ if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
   }
-
+function calculateChange(_money, _price){
+    
+}
+    
 
 // This code adds a message to the page
 
@@ -50,5 +53,6 @@ function start(){
     getUserName();
     getUserAge();
     getUserMoney();
+    calculateChange();
 }
 
