@@ -33,6 +33,7 @@ function getUserAge(){
 return userMoney;
   }
   function afford(){
+    let userMoney = Number(MONEY_FIELD.value);
 if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
 } else {
@@ -42,7 +43,6 @@ if (userMoney >= 4){
 function calculateChange(_money, _name, _change){
     OUTPUT.innerHTML += "<p> You have $" + _money + ". If you buy a " + _name + ", you will get $" + _change + " change.</p>"
 }
-const work = getUserMoney();
     
 
 // This code adds a message to the page
@@ -57,6 +57,7 @@ function start(){
     getUserName();
     getUserAge();
     getUserMoney();
+    afford();
     calculateChange(work, "Chocolate bar", work - 4);
     calculateChange(work, "pack of Chips", work - 4);
     calculateChange(getUserMoney, "Drink", getUserMoney - 4);
