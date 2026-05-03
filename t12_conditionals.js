@@ -23,8 +23,7 @@ function getUserName(){
   }
 function getUserAge(){
     const AGE_FIELD = document.getElementById("ageField");
-    let userAge = AGE_FIELD.value;
-    let userAgeNumber = Number(userAge);
+    let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p>You are " + userAge + " years old.</p>";
   }
   function getUserMoney(){
@@ -33,7 +32,7 @@ function getUserAge(){
     OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
   }
 function afford(){
-if (userAgeNumber >= 4){
+if (userAge >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
 } else {
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
