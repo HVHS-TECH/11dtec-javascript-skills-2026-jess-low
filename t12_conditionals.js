@@ -30,14 +30,12 @@ function getUserAge(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
-  }
-function afford(){
-if (userAge >= 4){
+if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
 } else {
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
-}
+  }
 
 
 // This code adds a message to the page
@@ -45,13 +43,12 @@ if (userAge >= 4){
 
 
 function start(){
-    getUserName();
-    getUserAge();
-    getUserMoney();
   welcome();
   displayProduct("Chocolate bar", 4);
   displayProduct("Chips", 3);
   displayProduct("Drink", "2.50");
-  afford();
+    getUserName();
+    getUserAge();
+    getUserMoney();
 }
 
