@@ -9,7 +9,13 @@ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 
-//Functions
+//Functions//Functions
+function welcome(){
+    OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
+}
+function displayProduct(_name, _price){
+    OUTPUT.innerHTML += "<h2>" + _name + ": $" + _price + "</h2>";
+}
 function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
     let userName = NAME_FIELD.value;
