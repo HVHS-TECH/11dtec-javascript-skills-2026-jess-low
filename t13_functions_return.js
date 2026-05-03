@@ -30,6 +30,7 @@ function getUserAge(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
+return userMoney;
   }
   function afford(){
 if (userMoney >= 4){
@@ -56,7 +57,7 @@ function start(){
     getUserName();
     getUserAge();
     getUserMoney();
-    calculateChange(userMoney, "Chocolate bar", userMoney - 4);
+    calculateChange(getUserMoney, "Chocolate bar", userMoney - 4);
     calculateChange(userMoney, "pack of Chips", userMoney - 4);
     calculateChange(userMoney, "Drink", userMoney - 4);
 }
