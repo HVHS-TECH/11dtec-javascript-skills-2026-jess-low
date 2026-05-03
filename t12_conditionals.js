@@ -31,11 +31,12 @@ function getUserAge(){
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
   }
-
-if (userMoney >= 4){
+function afford(){
+if (getUserMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
 } else {
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
+}
 }
 
 
@@ -51,5 +52,6 @@ function start(){
   displayProduct("Chocolate bar", 4);
   displayProduct("Chips", 3);
   displayProduct("Drink", "2.50");
+  afford();
 }
 
