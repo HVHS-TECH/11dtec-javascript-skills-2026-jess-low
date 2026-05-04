@@ -28,27 +28,28 @@ function getUserAge(){
   }
   function getUserMoney(){
     const MONEY_FIELD = document.getElementById("moneyField");
-    let userMoney = Number(MONEY_FIELD.value);
+    let userMoney = Number(MONEY_FIELD.value).toFixed(2);
     OUTPUT.innerHTML += "<p>You have $" + userMoney + ".</p>";
 return userMoney;
   }
+function calculateChange(_name, _cost){
+    const MONEY_FIELD = document.getElementById("moneyField");
+    let userMoney = Number(MONEY_FIELD.value).toFixed(2);
+    OUTPUT.innerHTML += "<p> You have $" + userMoney + ". If you buy a " + _name + ", you will get $" + (userMoney - _cost).toFixed(2) + " change.</p>"
+}
   function afford(){
     const MONEY_FIELD = document.getElementById("moneyField");
     let userMoney = Number(MONEY_FIELD.value);
 if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
+    calculateChange("Chocolate bar", 4);
+    calculateChange("pack of Chips", 3);
+    calculateChange("Drink", 2.50);
 } else {
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
+return userMoney;
   }
-function calculateChange(_name, _change, _cost, _more){
-    const MONEY_FIELD = document.getElementById("moneyField");
-    let userMoney = Number(MONEY_FIELD.value);
-    let _more = 
-    OUTPUT.innerHTML += "<p> You have $" + userMoney + ". If you buy a " + _name + ", you will get $" + (_change - _cost) + " change.</p>"
-}
-    const MONEY_FIELD = document.getElementById("moneyField");
-    let userMoney = Number(MONEY_FIELD.value);
     
 
 // This code adds a message to the page
@@ -64,7 +65,4 @@ function start(){
     getUserAge();
     getUserMoney();
     afford();
-    calculateChange("Chocolate bar", userMoney, 4);
-    calculateChange("pack of Chips", work, 4);
-    calculateChange("Drink", userMoney - 4);
 }

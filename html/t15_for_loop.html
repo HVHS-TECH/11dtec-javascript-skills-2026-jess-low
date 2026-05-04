@@ -21,6 +21,15 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
+  <button onclick="start()">Start</button><br>
+  
+  <form onsubmit="return false;">
+    <label for="formChoc">On a scale of 0-3, how much do you like chocolate:</label>
+    <input type="text" id="chocField" name="formChoc" placeholder="0-3...">
+    <input type="submit" onClick=getChocLike()>
+  </form>
+
+
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
