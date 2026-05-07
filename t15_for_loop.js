@@ -11,14 +11,12 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 //Functions
 
-  for (let i=_; i>0; i--){
-    OUTPUT.innerHTML += i + "<p> bottles of milk on the wall</p><br>" + i + "<p> bottles of milk</p>"
-  }
+
 
 let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing EVER!!!"];
 
-  function getChocLike(){
-    const CHOC_FIELD = document.getElementById("chocField");
+  function getBottles(){
+    const BOTTLE_AMOUNT = document.getElementById("bottleAmount");
     let chocLike = Number(CHOC_FIELD.value).toFixed(0);
     if (chocLike < 0){
         OUTPUT.innerHTML += "<p>Your disgust for chocolate is off the scale!</p>"
@@ -27,6 +25,10 @@ let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pre
 } else {
     OUTPUT.innerHTML += "<p>Your love for chocolate is off the scale!</p>"
 }
+  }
+  
+  for (let i=bottles; i>0; i--){
+    OUTPUT.innerHTML += "<p>" i + " bottles of milk on the wall</p><br><p>" + i + " bottles of milk</p><br><p>If one of those bottles should happen to fall</p><br><p>" + i + " bottles of milk on the wall.</p>";
   }
 
 // This code adds a message to the page
