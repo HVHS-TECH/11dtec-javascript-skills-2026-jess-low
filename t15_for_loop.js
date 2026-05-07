@@ -10,23 +10,23 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 
 //Functions
-
-
-
-let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing EVER!!!"];
-
   function getBottles(){
     const BOTTLE_FIELD = document.getElementById("bottleField");
     let bottleAmount = Number(BOTTLE_FIELD.value).toFixed(0);
 for (let bottle = bottleAmount; bottle>0; bottle--) {
-    OUTPUT.innerHTML += "<p>" + bottle + " bottles of milk on the wall</p><br><p>" + bottle + " bottles of milk</p><br><p>If one of those bottles should happen to fall</p><br><p>" + bottle + " bottles of milk on the wall.</p>";
+    if (bottleAmount > 1){
+        OUTPUT.innerHTML += "<p>" + bottle + " bottles of milk on the wall</p><p>" + bottle + " bottles of milk</p><p>If one of those bottles should happen to fall</p><p>" + bottle + " bottles of milk on the wall.</p><br>";
+} else {
+    OUTPUT.innerHTML += "<p>" + bottle + " bottle of milk on the wall</p><p>" + bottle + " bottle of milk</p><p>If that last bottle should happen to fall</p><p>No more bottles of milk on the wall.</p><br>";
+}
   }
-  }
+}
+  
+
   
 
 // This code adds a message to the page
 
-
 function start(){
     getBottles();
-}
+    }
