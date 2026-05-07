@@ -14,10 +14,12 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
     const BOTTLE_FIELD = document.getElementById("bottleField");
     let bottleAmount = Number(BOTTLE_FIELD.value).toFixed(0);
     for (let bottle = bottleAmount; bottle>0; bottle--) {
-      if (bottleAmount >= 2){
+      if (bottle >= 2){
         OUTPUT.innerHTML += "<p>" + bottle + " bottles of milk on the wall</p><p>" + bottle + " bottles of milk</p><p>If one of those bottles should happen to fall</p><p>" + bottle + " bottles of milk on the wall.</p><br>";
-      } else {
+      } else if (bottle = 1){
         OUTPUT.innerHTML += "<p>" + bottle + " bottle of milk on the wall</p><p>" + bottle + " bottle of milk</p><p>If that last bottle should happen to fall</p><p>No more bottles of milk on the wall.</p><br>";
+      } else {
+        OUTPUT.innerHTML += "<p>No bottles of milk on the wall</p><p>No bottles of milk</p><p>If there are no bottles left to fall</p><Were there ever bottles on the wall?</p>"
       }
     }
   }
