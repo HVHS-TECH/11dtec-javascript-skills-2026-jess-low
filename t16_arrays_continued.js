@@ -29,13 +29,13 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
   
 let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing EVER!!!"];
 
-  function getChocLike(){
-    const CHOC_FIELD = document.getElementById("chocField");
-    let chocLike = Number(CHOC_FIELD.value).toFixed(0);
-    if (chocLike < 0){
+  function getList(){
+    const LIST_FIELD = document.getElementById("listField");
+    let list = Number(LIST_FIELD.value).toFixed(0);
+    if (list < 0){
         OUTPUT.innerHTML += "<p>Your disgust for chocolate is off the scale!</p>"
-    } else if (chocLike <= 3){
-    OUTPUT.innerHTML += "<p>" + chocolate[chocLike] + "</p>";
+    } else if (list <= 3){
+    OUTPUT.innerHTML += "<p>" + chocolate[list] + "</p>";
 } else {
     OUTPUT.innerHTML += "<p>Your love for chocolate is off the scale!</p>"
 }
