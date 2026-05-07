@@ -13,20 +13,12 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 
 
-let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing EVER!!!"];
-
   function getBottles(){
-    const BOTTLE_AMOUNT = document.getElementById("bottleAmount");
-    let chocLike = Number(CHOC_FIELD.value).toFixed(0);
-    if (chocLike < 0){
-        OUTPUT.innerHTML += "<p>Your disgust for chocolate is off the scale!</p>"
-    } else if (chocLike <= 3){
-    OUTPUT.innerHTML += "<p>" + chocolate[chocLike] + "</p>";
-} else {
-    OUTPUT.innerHTML += "<p>Your love for chocolate is off the scale!</p>"
-}
+    const BOTTLE_AMOUNT = document.getElementById("bottleField");
+    let bottleAmount = Number(BOTTLE_AMOUNT.value).toFixed(0);
+    OUTPUT.innerHTML += "<p>" + bottleAmount + "bottles</p>";
   }
-  
+
   for (let i=bottles; i>0; i--){
     OUTPUT.innerHTML += "<p>" i + " bottles of milk on the wall</p><br><p>" + i + " bottles of milk</p><br><p>If one of those bottles should happen to fall</p><br><p>" + i + " bottles of milk on the wall.</p>";
   }
@@ -35,13 +27,5 @@ let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pre
 
 
 function start(){
-  welcome();
-  displayProduct("Chocolate bar", 4);
-  displayProduct("Chips", 3);
-  displayProduct("Drink", "2.50");
-    getUserName();
-    getUserAge();
-    getUserMoney();
-    afford();
-    getChocLike();
+    getBottles();
 }
