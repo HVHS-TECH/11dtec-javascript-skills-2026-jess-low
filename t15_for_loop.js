@@ -12,7 +12,7 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 //Functions
 
   for (let i=_; i>0; i--){
-    OUTPUT.innerHTML += "<p></p>"
+    OUTPUT.innerHTML += i + "<p> bottles of milk on the wall</p><br>" + i + 
   }
 
 let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pretty good.", "Chocolate is the best thing EVER!!!"];
