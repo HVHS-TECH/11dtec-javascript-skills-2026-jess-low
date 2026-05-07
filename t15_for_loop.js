@@ -18,8 +18,8 @@ let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pre
   function getBottles(){
     const BOTTLE_FIELD = document.getElementById("bottleField");
     let bottleAmount = Number(BOTTLE_FIELD.value).toFixed(0);
-for (bottleAmount>0; bottleAmount--){
-    OUTPUT.innerHTML += "<p>" bottleAmount + " bottles of milk on the wall</p><br><p>" + bottleAmount + " bottles of milk</p><br><p>If one of those bottles should happen to fall</p><br><p>" + bottleAmount + " bottles of milk on the wall.</p>";
+for (let bottle = bottleAmount; bottle>0; bottle--) {
+    OUTPUT.innerHTML += "<p>" + bottle + " bottles of milk on the wall</p><br><p>" + bottle + " bottles of milk</p><br><p>If one of those bottles should happen to fall</p><br><p>" + bottle + " bottles of milk on the wall.</p>";
   }
   }
   
