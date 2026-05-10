@@ -43,8 +43,8 @@ let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pre
 
   function getItem(){
     const ITEM_FIELD = document.getElementById("itemField");
-    let item = ITEM_FIELD;
-    OUTPUT.innerHTML += "<p>You have added " + item + " to the list.</p>"
+    let item = ITEM_FIELD.value;
+    OUTPUT.innerHTML += "<p>You have added '" + item + "' to the list.</p>"
   }
   
 
