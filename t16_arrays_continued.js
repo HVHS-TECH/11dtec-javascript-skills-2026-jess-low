@@ -43,7 +43,7 @@ let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pre
 
   function getItem(){
     const ITEM_FIELD = document.getElementById("itemField");
-    
+    OUTPUT.innerHTML
   }
   
 
