@@ -43,9 +43,9 @@ function calculateChange(_name, _cost){
     let userMoney = Number(MONEY_FIELD.value);
 if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can afford a chocolate bar.</p>";
-    calculateChange("Chocolate bar", 4);
-    calculateChange("pack of Chips", 3);
-    calculateChange("Drink", 2.50);
+    calculateChange("chocolate bar", 4);
+    calculateChange("pack of chips", 3);
+    calculateChange("drink", 2.50);
 } else {
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
 }
@@ -72,7 +72,7 @@ function getList(){
 
 function start(){
   welcome();
-  displayProduct("Chocolate bar", 4);
+  displayProduct("Chocolate Bar", 4);
   displayProduct("Chips", 3);
   displayProduct("Drink", "2.50");
     getUserName();
