@@ -40,6 +40,11 @@ let chocolate = ["You loathe chocolate.", "Chocolate is meh.", "Chocolate is pre
     OUTPUT.innerHTML += "<p>Your love for chocolate is off the scale!</p>"
 }
   }
+
+  function getItem(){
+    const ITEM_FIELD = document.getElementById("itemField");
+    
+  }
   
 
   
