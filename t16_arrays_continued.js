@@ -5,9 +5,9 @@ Intro:/
 console.log("Running t16_arrays_continued.js");
 
 // transfer from JS to HTML
-
-const OUTPUT = document.getElementById("JavaScriptOutput");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
+
 
 //Functions
 
@@ -51,21 +51,7 @@ if (userMoney >= 4){
 }
 return userMoney;
   }
-
-function start(){
-  welcome();
-  displayProduct("Chocolate bar", 4);
-  displayProduct("Chips", 3);
-  displayProduct("Drink", "2.50");
-    getUserName();
-    getUserAge();
-    getUserMoney();
-    afford();
-}
   
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
-
 let listArray = [];
 
   function getItem(){
@@ -78,8 +64,19 @@ let listArray = [];
 // This code adds a message to the page
 
 function getList(){
-  OUTPUT.innerHTML += "<p>These are the items on your shopping list:"
+  OUTPUT.innerHTML += "<h3>These are the items on your shopping list:</h3>"
   for (let i=0; i<listArray.length; i++){
     OUTPUT.innerHTML += "<p>Item " + (i+1) + ": " + listArray[i] + "</p>";
   }
     }
+
+function start(){
+  welcome();
+  displayProduct("Chocolate bar", 4);
+  displayProduct("Chips", 3);
+  displayProduct("Drink", "2.50");
+    getUserName();
+    getUserAge();
+    getUserMoney();
+    afford();
+}
