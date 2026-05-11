@@ -28,12 +28,12 @@ function getUserName(){
   }
 function getUserAge(){
     const AGE_FIELD = document.getElementById("ageField");
+    let userAge = Number(AGE_FIELD.value);
     if (AGE_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
-    } else if (AGE_FIELD > 130) {
-        OUTPUT.innerHTML += "<h2>Wow, that's old! Are you sure you're not immortal?</h2>"
+    } else if (userAge > 130){
+        OUTPUT.innerHTML += "<p>You're " + userAge + "? Wow, that's old! Are you sure you're not immortal?</p>"
     } else {
-    let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p>You are " + userAge + " years old.</p>";
 }
   }
@@ -67,8 +67,15 @@ if (userMoney >= 4){
     calculateChange("chocolate bar", 4);
     calculateChange("pack of chips", 3);
     calculateChange("drink", 2.50);
-} else {
+} else if (userMoney < 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
+    calculateChange("pack of chips", 3);
+    calculateChange("drink", 2.50);
+} else if (userMoney < 3){
+    OUTPUT.innerHTML += "<p>A chocolate bar costs $4 and a pack of chips costs $3, so you can't afford a chocolate bar or a pack of chips.</p>";
+    calculateChange("drink", 2.50);
+} else if (userMoney < 2.50){
+    OUTPUT.innerHTML += "<p>A chocolate bar costs $4, pack of chips costs $3, and a drink costs $2. 50, so you can't afford any of them. Come back when you're not broke.</p>";
 }
 return userMoney;
   }
