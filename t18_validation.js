@@ -67,7 +67,7 @@ if (userMoney >= 4){
     calculateChange("chocolate bar", 4);
     calculateChange("pack of chips", 3);
     calculateChange("drink", 2.50);
-} else if (userMoney >= 3.99){
+} else if (userMoney >= 3){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
     calculateChange("pack of chips", 3);
     calculateChange("drink", 2.50);
