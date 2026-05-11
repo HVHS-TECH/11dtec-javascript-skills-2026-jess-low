@@ -49,7 +49,8 @@ return userMoney;
   }
 function calculateChange(_name, _cost){
     const MONEY_FIELD = document.getElementById("moneyField");
-    if (MONEY_FIELD.checkValidity() === false){
+    let userMoney = Number(MONEY_FIELD.value).toFixed(2);
+    if (userMoney.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
     let userMoney = Number(MONEY_FIELD.value).toFixed(2);
