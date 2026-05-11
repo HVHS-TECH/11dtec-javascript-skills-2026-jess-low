@@ -30,6 +30,8 @@ function getUserAge(){
     const AGE_FIELD = document.getElementById("ageField");
     if (AGE_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
+    } else if (AGE_FIELD > 130) {
+        OUTPUT.innerHTML += "<h2>Wow, that's old! Are you sure you're not immortal?</h2>"
     } else {
     let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p>You are " + userAge + " years old.</p>";
