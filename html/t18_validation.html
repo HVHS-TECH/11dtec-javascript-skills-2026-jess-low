@@ -21,7 +21,6 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
-  <button onclick="start()">Start</button><br>
 
   <form onsubmit="return false;">
     <label for="formName">Name:</label>
@@ -31,7 +30,7 @@
 
   <form onsubmit="return false;">
     <label for="formAge">Age:</label>
-    <input type="text" id="ageField" name="formAge" placeholder="Age..." required>
+    <input type="text" id="ageField" name="formAge" placeholder="Age..." min="0" max="" required>
     <input type="submit" onClick=getUserAge()>
   </form>
 
@@ -41,6 +40,7 @@
     <input type="submit" onClick=getUserMoney()>
   </form>
   <br><br>
+  <button onclick="start()">Start</button><br>
 
   <button onclick="getList()">View list:</button><br>
   
