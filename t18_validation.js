@@ -74,7 +74,7 @@ if (userMoney >= 4){
 } else if (userMoney < 3){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4 and a pack of chips costs $3, so you can't afford a chocolate bar or a pack of chips.</p>";
     calculateChange("drink", 2.50);
-} else if (userMoney < 2.50){
+} else if (userMoney < 2.5){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, pack of chips costs $3, and a drink costs $2. 50, so you can't afford any of them. Come back when you're not broke.</p>";
 }
 return userMoney;
