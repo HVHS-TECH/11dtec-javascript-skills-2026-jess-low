@@ -21,6 +21,36 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
+
+  <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" pattern="[^0-9]*" id="nameField" name="formName" placeholder="Name..." required>
+    <input type="submit" onClick=getUserName()>
+  </form>
+
+  <form onsubmit="return false;">
+    <label for="formAge">Age:</label>
+    <input type="number" id="ageField" name="formAge" placeholder="Age..." min="0" required>
+    <input type="submit" onClick=getUserAge()>
+  </form>
+
+  <form onsubmit="return false;">
+    <label for="formMoney">Pocket money:</label>
+    <input type="number" id="moneyField" name="formMoney" placeholder="$..." step="0.01" required>
+    <input type="submit" onClick=getUserMoney()>
+  </form>
+  <br>
+  <button onclick="start()">Start</button><br><br>
+
+  
+  <form onsubmit="return false;">
+    <label for="formItem">Add an item to your shopping list:</label>
+    <input type="text" id="itemField" name="formItem" placeholder="Item...">
+    <input type="submit" value="Add Item" onClick=getItem()>
+  </form><br>
+
+  <button onclick="getList()">View list:</button>
+
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
