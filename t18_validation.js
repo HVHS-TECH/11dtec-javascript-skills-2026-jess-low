@@ -21,7 +21,9 @@ function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
-    } else {
+    } else if (NAME_FIELD = Number(NAME_FIELD.value)){
+        OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
+    } else{
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>";
 }
