@@ -71,11 +71,13 @@ if (userMoney >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, so you can't afford a chocolate bar.</p>";
     calculateChange("pack of chips", 3);
     calculateChange("drink", 2.50);
-} else if (userMoney >= 2.99){
+} else if (userMoney >= 2.50){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4 and a pack of chips costs $3, so you can't afford a chocolate bar or a pack of chips.</p>";
     calculateChange("drink", 2.50);
-} else if (userMoney < 2.5){
+} else if (userMoney >= 0){
     OUTPUT.innerHTML += "<p>A chocolate bar costs $4, pack of chips costs $3, and a drink costs $2.50, so you can't afford any of them. Come back when you're not broke.</p>";
+} else {
+    OUTPUT.innerHTML += "<p>Hold on. Negative numbers? You're not just broke, you're in DEBT. Go get a job!</p>"
 }
 return userMoney;
   }
