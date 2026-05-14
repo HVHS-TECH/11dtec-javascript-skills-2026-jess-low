@@ -48,10 +48,10 @@ function getUserAge(){
   }
   function getUserMoney(){
     const MONEY_FIELD = document.getElementById("moneyField");
+    user.money = Number(MONEY_FIELD.value).toFixed(2);
     if (MONEY_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
-    user.money = Number(MONEY_FIELD.value).toFixed(2);
     OUTPUT.innerHTML += "<p>You have $" + user.money + ".</p>";
     }
   }
