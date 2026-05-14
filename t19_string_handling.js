@@ -19,12 +19,13 @@ function displayProduct(_name, _price){
 }
 function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
+    let userName = NAME_FIELD.value;
     if (NAME_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
+    } else if (document.getElementById("userName").innerHTML < userName.length(2)){
+        OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
-document.getElementById("nameField").innerHTML = nameField.length;
-    let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<p>Your name is " + userName + nameField.length + ".</p>";
+    OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>";
 }
   }
 function getUserAge(){
