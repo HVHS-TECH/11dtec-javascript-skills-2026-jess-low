@@ -2,7 +2,7 @@
 Intro:/
 ****************************/
 
-console.log("Running t18_validation.js");
+console.log("Running t19_string_handling.js");
 
 // transfer from JS to HTML
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
