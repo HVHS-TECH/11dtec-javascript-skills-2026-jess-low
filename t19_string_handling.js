@@ -17,7 +17,7 @@ function welcome(){
 function displayProduct(_name, _price){
     OUTPUT.innerHTML += "<h2>" + _name + ": $" + _price + "</h2>";
 }
-function getUserName(){ length
+function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
