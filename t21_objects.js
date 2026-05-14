@@ -56,7 +56,6 @@ function getUserAge(){
     }
   }
 function calculateChange(_name, _cost){
-    const MONEY_FIELD = document.getElementById("moneyField");
     if (MONEY_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
