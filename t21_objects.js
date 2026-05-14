@@ -59,8 +59,7 @@ function calculateChange(_name, _cost){
     if (MONEY_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
-    user.money = Number(MONEY_FIELD.value).toFixed(2);
-    OUTPUT.innerHTML += "<p> You have $" + userMoney + ". If you buy a " + _name + ", you will get $" + (user.money - _cost).toFixed(2) + " change.</p>"
+    OUTPUT.innerHTML += "<p> You have $" + user.money + ". If you buy a " + _name + ", you will get $" + (user.money - _cost).toFixed(2) + " change.</p>"
 }
 }
 
