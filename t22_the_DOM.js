@@ -10,6 +10,9 @@ OUTPUT.innerHTML = "<h2>Added by JavaScript</h2>"
 
 
 //Functions
+function clearAll(){
+    OUTPUT.innerHTML = "";
+}
 
 function welcome(){
     OUTPUT.innerHTML += "<h1>Welcome to the shop!</h1>"
