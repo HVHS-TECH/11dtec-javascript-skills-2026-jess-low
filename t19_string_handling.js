@@ -22,7 +22,7 @@ function getUserName(){
     let userName = NAME_FIELD.value;
     if (NAME_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
-    } else if (document.getElementById("userName").innerHTML < userName.length(2)){
+    } else if (document.getElementById("userName") < userName.length(2)){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
     OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>";
