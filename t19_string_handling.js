@@ -21,11 +21,10 @@ function getUserName(){
     const NAME_FIELD = document.getElementById("nameField");
     if (NAME_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
-    } else if (document.getElementById("nameField").innerHTML < text.length(2)){
-        OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else {
+document.getElementById("nameField").innerHTML = text.length;
     let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>";
+    OUTPUT.innerHTML += "<p>Your name is " + userName + text.length + ".</p>";
 }
   }
 function getUserAge(){
