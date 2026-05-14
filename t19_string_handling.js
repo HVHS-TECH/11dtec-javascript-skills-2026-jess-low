@@ -23,7 +23,7 @@ function getUserName(){
     if (NAME_FIELD.checkValidity() === false){
         OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
     } else if (userName.length < 2){
-        OUTPUT.innerHTML = "<h1>Please fill out all fields correctly.</h1>"
+        OUTPUT.innerHTML = "<h1>Please fill out all fields correctly. If you genuinely do have a one-letter-long name, </h1>"
     } else {
     OUTPUT.innerHTML += "<p>Your name is " + userName + ".</p>";
 }
